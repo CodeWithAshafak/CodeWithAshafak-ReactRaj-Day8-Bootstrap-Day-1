@@ -26,7 +26,10 @@ import i8 from "./photos/i9.jpg"
 
 import Card from 'react-bootstrap/Card';
 
-
+// Task-2 Imports :-
+//import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 const Miniproject = () => {
   return (
    <>
@@ -236,7 +239,36 @@ const Miniproject = () => {
     
 
     </div>
-   
+    <center>
+    <h1>Task-2</h1>
+    <Container id='mc'>
+      <Row id='r1'>
+        <Col md={2} style={{backgroundColor:'pink'}}>1 of 3</Col>
+        <Col md={8}  style={{backgroundColor:'yellow'}}>2 of 3</Col>
+        <Col md={2}  style={{backgroundColor:'pink'}}>3 of 3</Col>
+
+      </Row>
+      <Row id='r2'>
+        <Col md={3} style={{backgroundColor:'yellow'}}>1 of 5</Col>
+        <Col md={3} style={{backgroundColor:'blue'}}>2 of 5</Col>
+        <Col md={2} style={{backgroundColor:'green'}}>3 of 5</Col>
+        <Col md={2}  style={{backgroundColor:'red'}}>4 of 5</Col>
+        <Col md={2}  style={{backgroundColor:'black'}}>5 of 5</Col>
+
+      </Row>
+      <Row id='r3'>
+        <Col md={1} style={{backgroundColor:'yellow'}}>1 of 5</Col>
+        <Col md={2} style={{backgroundColor:'pink'}}>2 of 5</Col>
+        <Col md={2} style={{backgroundColor:'green'}}>3 of 5</Col>
+        <Col md={1}  style={{backgroundColor:'red'}}>4 of 5</Col>
+        <Col md={6}  style={{backgroundColor:'skyblue'}}>5 of 5</Col>
+
+      </Row>
+
+    </Container>
+
+    </center>
+
    </>
   )
 }
